@@ -1,6 +1,6 @@
-import 'package:fluter_bloc/app/presentation/views/home_view/home_view.dart';
 import 'package:flutter/material.dart';
 
+import 'config/app_router/app_router.dart';
 import 'config/themes/theme.dart';
 
 class App extends StatelessWidget {
@@ -8,9 +8,9 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
+      routerConfig: appRouter,
       theme: AppTheme(selectedThemeColor: 0).theme(),
-      home: const HomeView(),
     );
   }
 }

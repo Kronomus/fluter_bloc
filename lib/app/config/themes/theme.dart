@@ -26,6 +26,11 @@ class AppTheme{
         backgroundColor: _colorTheme[selectedThemeColor],
         foregroundColor: Colors.white,
       ),
+      listTileTheme: const ListTileThemeData(
+        textColor: Colors.black,
+
+      ),
+
     );
   }
 }
